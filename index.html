@@ -11,7 +11,8 @@
         theme: {
           extend: {
             colors: {
-              primary: '#60a5fa'
+              primary: '#60a5fa',
+              darkText: '#d1d5db'
             }
           }
         }
@@ -22,9 +23,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
       body { font-family: 'Inter', sans-serif; }
+      .dark .text-inherit-dark { color: #d1d5db; }
     </style>
   </head>
-  <body class="bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-200 transition-all duration-300 ease-in-out" id="body">
+  <body class="bg-white text-gray-900 dark:bg-gray-900 dark:text-inherit-dark transition-all duration-300 ease-in-out" id="body">
     <!-- Toggle Dark Mode -->
     <div class="fixed top-4 right-4 z-50">
       <button onclick="document.getElementById('body').classList.toggle('dark');" class="px-3 py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-700 transition">🌗 Dark Mode</button>
@@ -33,36 +35,36 @@
     <!-- Header -->
     <header class="p-6 bg-white dark:bg-gray-800 shadow-md sticky top-0 z-10 transition-colors">
       <div class="max-w-6xl mx-auto flex justify-between items-center">
-        <h1 class="text-3xl font-bold tracking-tight">Adam Stikel</h1>
+        <h1 class="text-3xl font-bold tracking-tight text-inherit-dark">Adam Stikel</h1>
         <nav class="space-x-6 text-lg">
-          <a href="#about" class="hover:text-primary transition">About</a>
-          <a href="#projects" class="hover:text-primary transition">Projects</a>
-          <a href="#contact" class="hover:text-primary transition">Contact</a>
+          <a href="#about" class="hover:text-primary transition text-inherit-dark">About</a>
+          <a href="#projects" class="hover:text-primary transition text-inherit-dark">Projects</a>
+          <a href="#contact" class="hover:text-primary transition text-inherit-dark">Contact</a>
         </nav>
       </div>
     </header>
 
     <!-- Hero Section -->
     <section class="py-20 text-center bg-gradient-to-b from-white to-gray-50 dark:from-gray-900 dark:to-gray-800">
-      <h2 class="text-5xl font-extrabold mb-6">Welcome to My Portfolio</h2>
-      <p class="text-xl max-w-2xl mx-auto">Hi, I'm Adam — a passionate developer with experience in Java, Python, C++, and more. I love turning ideas into reality through code.</p>
+      <h2 class="text-5xl font-extrabold mb-6 text-inherit-dark">Welcome to My Portfolio</h2>
+      <p class="text-xl max-w-2xl mx-auto text-inherit-dark">Hi, I'm Adam — a passionate developer with experience in Java, Python, C++, and more. I love turning ideas into reality through code.</p>
     </section>
 
     <!-- About Section -->
     <section id="about" class="py-16 bg-white dark:bg-gray-900 transition-colors">
       <div class="max-w-4xl mx-auto text-center">
-        <h2 class="text-3xl font-bold mb-6">About Me</h2>
-        <p class="text-lg leading-relaxed dark:text-gray-300">
+        <h2 class="text-3xl font-bold mb-6 text-inherit-dark">About Me</h2>
+        <p class="text-lg leading-relaxed text-inherit-dark">
           I'm a student developer passionate about building real-world software and continuously learning new technologies. I have hands-on experience with Java, Python, and C++, and I develop in environments like IntelliJ and Visual Studio Code. I'm also certified in Microsoft PowerPoint and other tools listed on my LinkedIn. I'm eager to contribute to meaningful projects and grow as a developer.
         </p>
-        <h3 class="text-2xl font-semibold mt-10 mb-3">Skills</h3>
+        <h3 class="text-2xl font-semibold mt-10 mb-3 text-inherit-dark">Skills</h3>
         <div class="flex flex-wrap justify-center gap-3">
-          <span class="bg-gray-200 dark:bg-gray-700 px-4 py-1 rounded-full text-sm font-medium">Java</span>
-          <span class="bg-gray-200 dark:bg-gray-700 px-4 py-1 rounded-full text-sm font-medium">Python</span>
-          <span class="bg-gray-200 dark:bg-gray-700 px-4 py-1 rounded-full text-sm font-medium">C++</span>
-          <span class="bg-gray-200 dark:bg-gray-700 px-4 py-1 rounded-full text-sm font-medium">IntelliJ</span>
-          <span class="bg-gray-200 dark:bg-gray-700 px-4 py-1 rounded-full text-sm font-medium">GitHub</span>
-          <span class="bg-gray-200 dark:bg-gray-700 px-4 py-1 rounded-full text-sm font-medium">Microsoft PowerPoint Certified</span>
+          <span class="bg-gray-200 dark:bg-gray-700 px-4 py-1 rounded-full text-sm font-medium text-inherit-dark">Java</span>
+          <span class="bg-gray-200 dark:bg-gray-700 px-4 py-1 rounded-full text-sm font-medium text-inherit-dark">Python</span>
+          <span class="bg-gray-200 dark:bg-gray-700 px-4 py-1 rounded-full text-sm font-medium text-inherit-dark">C++</span>
+          <span class="bg-gray-200 dark:bg-gray-700 px-4 py-1 rounded-full text-sm font-medium text-inherit-dark">IntelliJ</span>
+          <span class="bg-gray-200 dark:bg-gray-700 px-4 py-1 rounded-full text-sm font-medium text-inherit-dark">GitHub</span>
+          <span class="bg-gray-200 dark:bg-gray-700 px-4 py-1 rounded-full text-sm font-medium text-inherit-dark">Microsoft PowerPoint Certified</span>
         </div>
       </div>
     </section>
@@ -70,17 +72,17 @@
     <!-- Projects Section -->
     <section id="projects" class="py-16 bg-gray-50 dark:bg-gray-800 transition-colors">
       <div class="max-w-6xl mx-auto">
-        <h2 class="text-3xl font-bold text-center mb-10">Projects</h2>
+        <h2 class="text-3xl font-bold text-center mb-10 text-inherit-dark">Projects</h2>
         <div class="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-          <div class="bg-white dark:bg-gray-700 rounded-2xl shadow-lg p-6 transform hover:scale-105 transition duration-300">
+          <div class="bg-white dark:bg-gray-700 rounded-2xl shadow-lg p-6 transform hover:scale-105 transition duration-300 text-inherit-dark">
             <h3 class="text-xl font-semibold mb-2">Tic Tac Toe (Java)</h3>
             <p class="mb-4 text-sm">A console-based Java game supporting Player vs. Player and AI modes.</p>
           </div>
-          <div class="bg-white dark:bg-gray-700 rounded-2xl shadow-lg p-6 transform hover:scale-105 transition duration-300">
+          <div class="bg-white dark:bg-gray-700 rounded-2xl shadow-lg p-6 transform hover:scale-105 transition duration-300 text-inherit-dark">
             <h3 class="text-xl font-semibold mb-2">Personal Budget Tracker (Python)</h3>
             <p class="mb-4 text-sm">Track income and expenses using Python. Simple terminal interface and CSV data storage.</p>
           </div>
-          <div class="bg-white dark:bg-gray-700 rounded-2xl shadow-lg p-6 transform hover:scale-105 transition duration-300">
+          <div class="bg-white dark:bg-gray-700 rounded-2xl shadow-lg p-6 transform hover:scale-105 transition duration-300 text-inherit-dark">
             <h3 class="text-xl font-semibold mb-2">Weather App (JavaScript)</h3>
             <p class="mb-4 text-sm">A responsive web app that shows current weather by city using a public API.</p>
           </div>
@@ -91,8 +93,8 @@
     <!-- Contact Section -->
     <section id="contact" class="py-16 bg-white dark:bg-gray-900 transition-colors">
       <div class="max-w-3xl mx-auto text-center">
-        <h2 class="text-3xl font-bold mb-6">Contact</h2>
-        <p class="text-lg mb-6">Feel free to reach out via email or connect with me on GitHub or LinkedIn!</p>
+        <h2 class="text-3xl font-bold mb-6 text-inherit-dark">Contact</h2>
+        <p class="text-lg mb-6 text-inherit-dark">Feel free to reach out via email or connect with me on GitHub or LinkedIn!</p>
         <div class="flex justify-center space-x-6 text-lg mb-6">
           <a href="mailto:stike001@rangers.uwp.edu" class="text-primary hover:underline">Email</a>
           <a href="https://github.com/adamstik" class="text-primary hover:underline">GitHub</a>
@@ -103,7 +105,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="py-6 text-center text-sm bg-gray-100 dark:bg-gray-800 dark:text-gray-300 transition-colors">
+    <footer class="py-6 text-center text-sm bg-gray-100 dark:bg-gray-800 dark:text-inherit-dark transition-colors">
       <p>&copy; 2025 Adam Stikel. All rights reserved.</p>
     </footer>
   </body>
